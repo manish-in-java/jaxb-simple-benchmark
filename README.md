@@ -1,8 +1,30 @@
 [![Build status](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/status.png)](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/latest)
 
 # Overview
-A collection of micro-benchmarks for comparing [Java Architecture for XML Binding (JAXB)](https://jaxb.java.net)
+A collection of micro-benchmarks comparing [Java Architecture for XML Binding (JAXB)](https://jaxb.java.net)
 against [Simple XML](http://simple.sourceforge.net/home.php).
+
+# Sample output
+The following output was obtained by running the benchmarks on a machine with:
+
+* Quad-core Intel Core-i5 2450M processor @ 2.50Ghz
+* 6GB DDR3 RAM @ 1333Mhz
+* 64-bit Windows 7 Professional
+* 64-bit Oracle Java Development Kit 1.8 patch 45
+
+Each benchmark tries to read an XML file containing 10,000 book records into a
+Java object graph.
+
+Framework | Input                         | Time
+--------- | ----------------------------- | -------------
+JAXB      | `java.io.BufferedReader`      | 0.027 seconds
+JAXB      | `java.io.BufferedInputStream` | 0.025 seconds
+JAXB      | `java.io.Reader`              | 0.027 seconds
+JAXB      | `java.io.InputStream`         | 0.025 seconds
+SimpleXML | `java.io.BufferedReader`      | 0.063 seconds
+SimpleXML | `java.io.BufferedInputStream` | 0.061 seconds
+SimpleXML | `java.io.Reader`              | 0.061 seconds
+SimpleXML | `java.io.InputStream`         | 0.062 seconds
 
 # License
 This sample application and its associated source code in its entirety is being made
