@@ -1,6 +1,4 @@
-[![Build status](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/status.png)](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/latest)
-
-# Overview
+# Overview [![Build status](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/status.png)](https://drone.io/github.com/manish-in-java/jaxb-simple-benchmark/latest)
 A collection of micro-benchmarks comparing [Java Architecture for XML Binding (JAXB)](https://jaxb.java.net)
 against [Simple XML](http://simple.sourceforge.net/home.php).
 
